@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+*{
+
+    box-sizing: border-box;
+    color: azure;
+}
+
+
+body{
+
+  background-color: black;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+
+header{
+    position:relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 5px 5%;
+    background: transparent;
+    
+
+}
+.logo{
+   
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.logo img{
+    width: 45px;
+    height:45px;
+    object-fit:contain;
+    margin: 0;
+    color: white;
+
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+        
+}
+
+nav ul a{
+    display: inline-block;
+    color: #d1d1d1;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 25px;
+   
+}
+
+nav ul a:hover{
+    color: #ffffff;
+    /* color: red; */
+    /* background:transparent; */
+    transform: scale(1.15);
+    
+}
+
+.contact-btn{
+    background-color: #f97316;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease ;
+    font-size: 25px;
+    
+}
+a:hover{
+    background-color: transparent;
+}
+.contact-btn:hover{
+    background-color: red;
+    transform: scale(1.2);
+}
+
+.bg-image{
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    
+}
+
+
+
+.main-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 250px;
+    margin-left: 3%;
+    margin-right: 3%;
+   
+}
+
+.main-text p{
+    font-size: 20px;
+    margin-top: 0px;
+    color: #ffffff;
+    
+} 
+
+.section-1{
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+.section-2 a{
+    text-decoration: none;
+}
+
+.section-2 img{
+    height: 70px;
+}
+.section-2{
+
+    background:transparent;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    border: 1px solid  rgb(67, 66, 66);
+    padding: 20px;
+    padding-bottom: 0px;
+    font-size: 25px;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    
+}
+
+.section-2:hover{
+    transform: scale(1.2);
+    background-color: rgb(30, 27, 27);
+}
+
+.bottom-line{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 300px;
+
+}
+
+
+
+
+
