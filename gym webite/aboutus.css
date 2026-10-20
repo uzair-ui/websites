@@ -1,0 +1,193 @@
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292929;
+    padding: 10px 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f97316;
+}
+
+/* Introduction */
+.hero {
+    padding: 70px 40px;
+    background-color: #171717;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+    ), url("images/gym.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h3,
+.about-box h3,
+.values > h3 {
+    color: #f97316;
+}
+
+.hero h1 {
+    margin: 5px 0;
+}
+
+.orange {
+    color: #f97316;
+}
+
+.hero p {
+    max-width: 450px;
+    line-height: 1.6;
+}
+
+/* Story and Mission */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    width: 92%;
+    margin: 30px auto;
+}
+
+.about-box {
+    background-color: #292929;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.about-box img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.about-box h3 {
+    margin-bottom: 5px;
+}
+
+.about-box p {
+    line-height: 1.6;
+}
+
+/* Our Values */
+.values {
+    width: 92%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #292929;
+}
+
+.values > h3 {
+    margin-bottom: 5px;
+}
+
+.values-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.value-box {
+    border-right: 1px solid gray;
+    padding: 10px;
+}
+
+.value-box h2 {
+    color: #f97316;
+    font-size: 18px;
+}
+
+.value-box p {
+    line-height: 1.5;
+}
+
+/* Slogan */
+.slogan {
+    text-align: center;
+    padding: 30px 10px;
+    background-color: #171717;
+}
+
+.slogan h2 {
+    color: #f97316;
+}
+
+/* Footer */
+footer {
+    background-color: #292929;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Smaller Screens */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .values-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+}
