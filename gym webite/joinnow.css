@@ -1,0 +1,242 @@
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+body {
+    margin: 0 30px;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(30, 28, 28);
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f97316;
+}
+
+/* Introduction */
+.hero {
+    text-align: center;
+    padding: 55px 20px;
+    margin-top: 20px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+    ), url("images/gym.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h3 {
+    color: #f97316;
+}
+
+.hero h1 {
+    font-size: 35px;
+}
+
+.hero p {
+    color: lightgray;
+    line-height: 1.6;
+}
+
+/* Membership Benefits */
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.benefit-box {
+    background-color: rgb(30, 28, 28);
+    padding: 20px;
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+.benefit-box h3 {
+    color: #f97316;
+}
+
+.benefit-box p {
+    color: lightgray;
+}
+
+/* Registration Section */
+.join-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: rgb(30, 28, 28);
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.2);
+}
+
+.form-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-heading h3 {
+    color: #f97316;
+}
+
+.form-heading p {
+    color: lightgray;
+}
+
+/* Form Grid */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: white;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid gray;
+    background-color: #eeeeee;
+    color: black;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+/* Join Button */
+.join-container button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 20px;
+    background-color: #f97316;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.join-container button:hover {
+    background-color: #d9570b;
+}
+
+/* JavaScript Message */
+#message {
+    text-align: center;
+    color: #f97316;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: rgb(30, 28, 28);
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+
+    body {
+        margin: 0 10px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .benefits {
+        width: 100%;
+    }
+
+    .join-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: span 1;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
